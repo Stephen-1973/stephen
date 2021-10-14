@@ -1,0 +1,42 @@
+.btn {
+    background-color: transparent;
+    color: $color-white;
+    padding: 1rem 3rem;
+    border-radius: 2.9rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+    cursor: pointer;
+    border: 2px solid $color-grey-dark-2;
+    @include respond(phone) {
+        letter-spacing: .4rem;
+        padding: .5rem 2rem;
+        font-size: 1rem;
+    }
+
+    &-red {
+        letter-spacing: .2rem;
+        position: fixed;
+        border-radius: 4px;
+        right: 2rem;
+        border: none;
+        background-color: rgba(131, 10, 10, 0.9);
+        z-index: 100;
+        @include respond(tab-land) {
+            right: 0rem;
+            padding: 0.6rem 1.5rem;
+            p {
+                display: none
+            }
+            &::before {
+                content: 'x';
+                letter-spacing: 0;
+                font-size: 1.2rem;
+            }
+        }
+
+        
+
+    }
+}
+

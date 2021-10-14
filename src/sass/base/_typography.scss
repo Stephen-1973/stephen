@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+body {
+    font-family: "Poppins";
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &--main {
+        height: fit-content;
+        display: block;
+        font-size: 5rem;
+        font-weight: 200;
+        letter-spacing: 2.75rem;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        @include respond(phone) {
+            font-size: 3rem;
+            letter-spacing: 1.5rem;
+        }
+
+        //define animation
+    }
+
+
+    &--sub {
+        display: block;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 1.75rem;
+
+         @include respond(phone) {
+            font-size: 2rem;
+            letter-spacing: 1rem;
+        }
+
+        span {
+            color: $color-primary;
+            text-decoration: underline;
+            span {
+                letter-spacing: 0;
+                margin-right: 1.75rem;
+            }
+        }
+    }
+}
+
+.styles_typicalWrapper__1_Uvh {
+    margin: 0 !important;
+    padding: 0 !important;
+}

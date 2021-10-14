@@ -1,0 +1,88 @@
+.main {
+    max-width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    width: calc(100% + 12px);
+
+    @include respond(phone) {
+        margin-top: 0;
+    }
+
+    &-div {
+        padding: 2rem;
+
+        &_blog {
+            &-header {
+                font-family: 'Poppins';
+                font-size: 3rem;
+                color: $color-black;
+
+                @include respond(phone) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        &_blogs {
+
+            height: fit-content;
+            max-width: 100%;
+            width: 100%;
+            position: relative;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &-image {
+                max-height: 30rem;
+                max-width: 30rem;
+                object-fit: cover;
+            }
+
+
+            &-container{
+                padding: 1rem;
+                height: fit-content;
+                width: 30rem;
+
+                &-title {
+                    color: $color-black;
+                    font-size: 2rem;
+                    font-weight: 200;
+                    margin: 0 ;
+                    margin-top: 1rem;
+                    max-width: 100%;
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                    hyphens: auto;
+
+                    @include respond(phone) {
+                        font-size: 1.75rem;
+                    }
+                    
+                }
+                &-tags {
+                    color: black;
+                    width: fit-content;
+                    padding: .2rem;
+                    outline: 1px solid grey;
+                    border-radius: 2.9rem;
+                    margin-right: .5rem;
+
+                    &-container {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        
+        }
+    }
+
+
+}
