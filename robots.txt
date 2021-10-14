@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Crawl-delay: 20
+Visit-time: 0200-0300
